@@ -18,7 +18,7 @@ unit_tests: $(OBJS) unit_tests.o
 
 # clean all created files
 clean:
-	rm -f unit_tests $(OBJS) unit_tests.o a.out Makefile.d
+	rm -f unit_tests $(OBJS) Makefile.d
 
 # generate deps for all files
 deps:
