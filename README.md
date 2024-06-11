@@ -1,3 +1,4 @@
+[![tests](https://github.com/DainfromLiria/spreadsheet/actions/workflows/main.yml/badge.svg)](https://github.com/DainfromLiria/spreadsheet/actions/workflows/main.yml)
 # Spreadsheet
 
 ### About
