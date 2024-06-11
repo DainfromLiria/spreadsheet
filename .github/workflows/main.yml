@@ -17,14 +17,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up C++ environment
-      uses: actions/setup-cpp@v2
-      with:
-        compiler: gcc
-
-    - name: Install dependencies
-      run: sudo apt-get install -y make
-
     - name: Build
       run: make
 
