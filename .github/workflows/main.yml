@@ -1,0 +1,36 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up C++ environment
+      uses: actions/setup-cpp@v2
+      with:
+        compiler: gcc
+
+    - name: Install dependencies
+      run: sudo apt-get install -y make
+
+    - name: Build
+      run: make
+
+    - name: Run tests
+      run: make run
+
+    - name: Clean
+      run: make clean
+
